@@ -16,7 +16,8 @@ depends: [
   "ocaml" {>= "4.10.0"}
   "bos" {>= "0.2.0"}
   "fmt" {>= "0.8.9"}
-  "opam-state" {>= "2.1.0~~"}
+  "opam-state" {>= "2.0" & < "2.1" & opam-version >= "2.0" & opam-version < "2.1"}
+  "opam-state" {>= "2.1" & < "2.2" & opam-version >= "2.1" & opam-version < "2.2"}
   "opam-format"
   "odoc" {with-doc}
 ]
@@ -45,3 +46,5 @@ url {
   ]
 }
 x-commit-hash: "1345ed5872359b6f2708ccfc4e9cd3e1d1391204"
+# opam 2.2.0's opam-state library has an incompatible API change
+available: opam-version < "2.2"
