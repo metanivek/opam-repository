@@ -20,10 +20,10 @@ depends: [
   "mirage-crypto-rng" {>= "1.0.0"}
   "mirage-crypto-rng-eio" {with-test & >= "1.0.0"}
   "eio" {>= "0.12"}
-  "eio_main" {>= "0.12" with-test}
+  "eio_main" {>= "0.12" & with-test}
   "mdx" {with-test}
-  "crowbar" {>= "0.2.1" with-test}
-  "logs" {>= "0.7.0" with-test}
+  "crowbar" {>= "0.2.1" & with-test}
+  "logs" {>= "0.7.0" & with-test}
   "ptime" {>= "1.0.0"}
 ]
 tags: [ "org:mirage"]
@@ -52,3 +52,4 @@ url {
   ]
 }
 x-commit-hash: "394863a5fccb2f59d0779e571ce6092cda2e8f8f"
+x-maintenance-intent: [ "(latest)" ]
